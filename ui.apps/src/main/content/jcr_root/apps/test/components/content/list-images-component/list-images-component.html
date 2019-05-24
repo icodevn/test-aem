@@ -1,0 +1,9 @@
+<sly data-sly-use.listImageComp="com.icode.test.core.models.ListImageModel" />
+<div class="container">
+    <h2>${listImageComp.componentTitle}</h2>
+    <div class="row" data-sly-list.image="${listImageComp.listImages}">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <img alt="${image.imageTitle}" src="${image.imagePath}" class="img-responsive">
+        </div>
+    </div>
+</div>

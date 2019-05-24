@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>test - UI content</comment>
+<entry key="createdBy">louisphan</entry>
+<entry key="name">test.ui.content</entry>
+<entry key="created">2019-05-24T18:52:09.367+0700</entry>
+<entry key="groupId">test</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">test</entry>
+<entry key="description">UI content package for test</entry>
+<entry key="artifactId">test.ui.content</entry>
+<entry key="path">/etc/packages/test/test.ui.content.zip</entry>
+</properties>
