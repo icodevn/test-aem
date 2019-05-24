@@ -1,9 +1,20 @@
 package com.icode.test.core.entity;
 
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.Optional;
+
+import javax.inject.Inject;
+
+@Model(adaptables = Resource.class)
 public class Image {
 
+    @Inject
+    @Optional
     private String imagePath;
 
+    @Inject
+    @Optional
     private String imageTitle;
 
     public String getImagePath() {

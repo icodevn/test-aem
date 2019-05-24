@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1558698726509
+Bnd-LastModified: 1558700439517
 Build-Jdk: 1.8.0_201
 Built-By: louisphan
 Bundle-Description: Core bundle for test
@@ -8,16 +8,17 @@ Bundle-Name: test - Core
 Bundle-SymbolicName: test.core
 Bundle-Version: 1.0.0.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
-Export-Package: com.icode.test.core.entity;version="1.0.0",com.icode.tes
- t.core.filters;uses:="javax.servlet";version="1.0.0",com.icode.test.cor
- e.listeners;uses:="org.osgi.service.event";version="1.0.0",com.icode.te
- st.core.models;uses:="com.icode.test.core.entity,javax.annotation,javax
- .inject,org.apache.sling.api.resource,org.apache.sling.models.annotatio
- ns";version="1.0.0",com.icode.test.core;version="1.0",com.icode.test.co
- re.schedulers;version="1.0.0",com.icode.test.core.servlets;uses:="javax
- .servlet,org.apache.sling.api,org.apache.sling.api.servlets";version="1
- .0.0",com.icode.test.core.utils;uses:="org.apache.sling.api.resource";v
- ersion="1.0.0"
+Export-Package: com.icode.test.core.entity;uses:="org.apache.sling.api.r
+ esource,org.apache.sling.models.annotations";version="1.0.0",com.icode.
+ test.core.filters;uses:="javax.servlet";version="1.0.0",com.icode.test.
+ core.listeners;uses:="org.osgi.service.event";version="1.0.0",com.icode
+ .test.core.models;uses:="com.icode.test.core.entity,javax.annotation,ja
+ vax.inject,org.apache.sling.api.resource,org.apache.sling.models.annota
+ tions";version="1.0.0",com.icode.test.core;version="1.0",com.icode.test
+ .core.schedulers;version="1.0.0",com.icode.test.core.servlets;uses:="ja
+ vax.servlet,org.apache.sling.api,org.apache.sling.api.servlets";version
+ ="1.0.0",com.icode.test.core.utils;uses:="org.apache.sling.api.resource
+ ";version="1.0.0"
 Import-Package: javax.inject;version="0.0.0",com.icode.test.core.entity,
  javax.annotation,javax.servlet,org.apache.commons.lang3;version="[3.0,4
  )",org.apache.sling.api;version="[2.3,3)",org.apache.sling.api.request;
