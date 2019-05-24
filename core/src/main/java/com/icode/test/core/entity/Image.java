@@ -1,13 +1,19 @@
 package com.icode.test.core.entity;
 
+import com.icode.test.core.utils.LinkUtils;
 import org.apache.sling.api.resource.Resource;
+import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
+import org.apache.sling.models.annotations.injectorspecific.SlingObject;
 
 import javax.inject.Inject;
 
 @Model(adaptables = Resource.class)
 public class Image {
+
+    @SlingObject
+    private ResourceResolver resourceResolver;
 
     @Inject
     @Optional
@@ -18,7 +24,7 @@ public class Image {
     private String imageTitle;
 
     public String getImagePath() {
-        return imagePath;
+        return LinkUtils.getProperURL(imagePath,resourceResolver);
     }
 
     public void setImagePath(String imagePath) {
